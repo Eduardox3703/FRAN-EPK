@@ -1,0 +1,43 @@
+---
+// Ya no necesitas importar `Image` de 'astro:assets'
+---
+
+<header class="flex justify-center items-center h-20">
+    <img
+      src="/public/LogoFran-s.png"
+      width="80"
+      height="58"
+      alt="Logo"
+      loading="eager"
+    />
+  </header>
+  
+  <div class="relative">
+    <img
+      src="public/01-fran.jpg"
+      alt="header"
+      class="img-header"
+      loading="eager"
+      width="1200"
+      height="900"
+    />
+  
+    <img
+      src="/public/LogoFran-s.png"
+      alt="logo"
+      width="600"
+      height="195"
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+      loading="eager"
+    />
+  </div>
+  
+  <style>
+    .img-header {
+      mask-image: radial-gradient(ellipse 100% 70% at center, black 50%, transparent 70%);
+      width: 100%;
+      height: calc(100vh - 6rem);
+      object-fit: cover;
+    }
+  </style>
+  
